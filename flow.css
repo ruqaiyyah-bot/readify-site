@@ -1,0 +1,183 @@
+/* Header */
+/* Header container */
+header {
+  background-color: var(--text-color);
+  /* lavender */
+  color: var(--text-color);
+  /* deep purple */
+  padding: 2rem 3rem;
+  /* taller purple bar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+  /* center content */
+}
+
+/* Logo / site title */
+header h1 {
+  margin: 0 0 1rem 0;
+  /* space below title */
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+/* Navigation bar */
+header nav {
+  padding: 0.75rem 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Navigation list centered */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+header nav li:not(:last-child) a::after {
+  content: "|";
+  margin-left: 2rem;
+  color: white;
+}
+
+header nav a:hover {
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  border-radius: 4px;
+}
+
+
+/* Flow page header */
+#flow-header {
+  margin-top: 140px;
+  /* clears fixed header */
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  /* title left, sound control right */
+  align-items: center;
+}
+
+#flow-header h2 {
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* Sound control top-right */
+.sound-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sound-control button {
+  background-color: var(--text-color);
+  color: var(--body-bg);
+  border: none;
+  padding: 0.3rem 0.6rem;
+  /* smaller button */
+  border-radius: 50%;
+  font-size: 0.9rem;
+  /* smaller icon */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sound-control button:hover {
+  background-color: #3a1d66;
+}
+
+.sound-control p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+/* Flow container */
+#flow-container {
+  display: flex;
+  flex-direction: column;
+  /* stack sections vertically */
+  gap: 2rem;
+  margin: 2rem;
+}
+
+/* Reading list and completed books sections */
+.reading-list,
+.completed-books {
+  background-color: var(--primary-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reading-list h3,
+.completed-books h3 {
+  margin-top: 0;
+  color: var(--text-color);
+}
+
+/* Book grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Book card */
+.book-card {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.book-card p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--text-color);
+  color: var(--body-bg);
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Readify | Book Explorer</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="explorer.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="icon" href="images/favicon.png" >
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <h1>Readify</h1>
+
+         <div class="hamburger" id="hamburger">
+             <span></span>
+              <span></span>
+             <span></span>
+           </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Book Explorer</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="recommend.html">Recommend</a></li>
+                <li><a href="flow.html">Reading Flow</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- BOOK EXPLORER SECTION -->
+        <section>
+
+            <!-- SEARCH & FILTER ROW -->
+            <div>
+                <label for="search">Search:</label>
+                <input type="text" id="search" placeholder="Author / Title" />
+
+                <label for="genre">Genre</label>
+                <select id="genre">
+                    <option value="all">All</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="scifi">Sci‑Fi</option>
+                </select>
+            </div>
+
+            <!-- BOOK GRID : 18 BOOKS (6 PER ROW × 3 ROWS) -->
+            <div>
+
+                <!-- ROW 1 -->
+                <article>
+                    <img src="images/The Night Curcus -Erin Morgenstern.png"
+                        alt="Book cover of The Night Curcus -Erin Morgenstern">
+                    <h3>The Night Curcus</h3>
+                    <p>-Erin Morgenstern</p>
+                </article>
+                <article>
+                    <img src="images/The Goldfinch -Donna Tartt.png" alt="Book cover of The Goldfinch -Donna Tartt">
+                    <h3>The Goldfinch</h3>
+                    <p>-Donna Tartt</p>
+                </article>
+                <article>
+                    <img src="images/Normal People -Sally Rooney.png" alt="Book cover of Normal People -Sally Rooney">
+                    <h3>Normal People</h3>
+                    <p>-Sally Rooney</p>
+
+                </article>
+                <article>
+                    <img src="images/The Shadow of the Wind — Carlos Ruiz Zafón.png"
+                        alt="Book cover of The Shadow of the Wind — Carlos Ruiz Zafón">
+                    <h3>The Shadow of the Wind</h3>
+                    <p>-Carlos Ruiz Zafón</p>
+                </article>
+                <article>
+                    <img src="images/A Little Life — Hanya Yanagihara.png"
+                        alt="Book cover of A Little Life — Hanya Yanagihara">
+                    <h3>A Little Life</h3>
+                    <p>-Hanya Yanagihara</p>
+                </article>
+                <article>
+                    <img src="images/The Seven Husbands of Evelyn Hugo — Taylor Jenkins Reid.png"
+                        alt="Book cover of The Seven Husbands of Evelyn Hugo — Taylor Jenkins Reid">
+                    <h3>The Seven Husbands of Evelyn Hugo</h3>
+                    <p>-Taylor Jenkins Reid</p>
+                </article>
+
+                <!-- ROW 2 -->
+                <article>
+                    <img src="images/The Name of the Wind — Patrick Rothfuss.png"
+                        alt="The Name of the Wind — Patrick Rothfuss">
+                    <h3>The Name of the Wind</h3>
+                    <p>—Patrick Rothfuss</p>
+                </article>
+                <article>
+                    <img src="images/The Priory of the Orange Tree — Samantha Shannon.png"
+                        alt="Book cover of The Priory of the Orange Tree — Samantha Shannon">
+                    <h3>The Priory of the Orange Tree</h3>
+                    <p>— Samantha Shannon</p>
+                </article>
+                <article>
+                    <img src="images/Mistborn The Final Empire — Brandon Sanderson.png"
+                        alt="Book cover of Mistborn: The Final Empire — Brandon Sanderson">
+                    <h3>Mistborn: The Final Empire</h3>
+                    <p>—Brandon Sanderson</p>
+                </article>
+                <article>
+                    <img src="images/The Poppy War — R.F. Kuang.png" alt="Book cover of The Poppy War — R.F. Kuang">
+                    <h3>The Poppy War</h3>
+                    <p>—R.F. Kuang</p>
+                </article>
+                <article>
+                    <img src="images/Uprooted — Naomi Novik.png" alt="Book cover of Uprooted — Naomi Novik">
+                    <h3>Uprooted</h3>
+                    <p>—Naomi Novik</p>
+                </article>
+                <article>
+                    <img src="images/The Lies of Locke Lamora — Scott Lynch.png"
+                        alt="Book cover of The Lies of Locke Lamora — Scott Lynch">
+                    <h3>The Lies of Locke Lamora</h3>
+                    <p>—Scott Lynch</p>
+                </article>
+
+                <!-- ROW 3 -->
+                <article>
+                    <img src="images/Dune — Frank Herbert.png" alt="Book cover of Dune — Frank Herbert">
+                    <h3>Dune</h3>
+                    <p>—Frank Herbert</p>
+                </article>
+                <article>
+                    <img src="images/The Three Body Problem — Cixin Liu.png"
+                        alt="Book cover of The Three Body Problem — Cixin Liu">
+                    <h3>The Three Body Problem</h3>
+                    <p>—Cixin Liu</p>
+                </article>
+                <article>
+                    <img src="images/Neuromancer — William Gibson.png" alt="Book cover of Neuromancer — William Gibson">
+                    <h3>Neuromancer</h3>
+                    <p>—William Gibson</p>
+                </article>
+                <article>
+                    <img src="images/The Expanse Leviathan Wakes — James S.A. Corey.png"
+                        alt="Book cover of The Expanse Leviathan Wakes — James S.A. Corey">
+                    <h3>The Expanse Leviathan Wakes</h3>
+                    <p>James S.A. Corey</p>
+                </article>
+                <article>
+                    <img src="images/Kindred — Octavia E. Butler.png" alt="Book cover of Kindred — Octavia E. Butler">
+                    <h3>Kindred</h3>
+                    <p>—Octavia E. Butler</p>
+                </article>
+                <article>
+                    <img src="images/The Long Way to a Small, Angry Planet — Becky Chambers.png"
+                        alt="Book cover of The Long Way to a Small, Angry Planet — Becky Chambers">
+                    <h3>The Long Way to a Small, Angry Planet</h3>
+                    <p>—Becky Chambers</p>
+                </article>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+        </section>
+        <!-- BOOK DETAILS MODAL (HIDDEN BY DEFAULT) -->
+        <section id="book-modal" hidden>
+            <div>
+                <button aria-label="Close modal">&times;</button>
+
+                <h2>Book Title</h2>
+
+                <h3>Synopsis</h3>
+                <p>
+                    This is where the book synopsis will appear. It provides a brief description
+                    of the book content and storyline.
+                </p>
+
+                <h3>Sequels / Prequels</h3>
+                <ul>
+                    <li>Sequel Book 1</li>
+                    <li>Sequel Book 2</li>
+                </ul>
+
+                <h3>Ratings & Reviews</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Reviewer</th>
+                            <th>Rating</th>
+                            <th>Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Anna</td>
+                            <td>5</td>
+                            <td>Loved it</td>
+                        </tr>
+                        <tr>
+                            <td>Tom</td>
+                            <td>4</td>
+                            <td>Very engaging</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <center>
+            <h3>Readify</h3>
+            <p>&copy; 2025 Readify. All rights reserved.</p>
+        </center>
+    </footer>
+    <script src="books.js"></script>
+
+</body>
+
+</html>

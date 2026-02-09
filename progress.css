@@ -1,0 +1,214 @@
+/* Header */
+/* Header container */
+header {
+  background-color: var(--text-color);
+  /* lavender */
+  color: var(--text-color);
+  /* deep purple */
+  padding: 2rem 3rem;
+  /* taller purple bar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+  /* center content */
+}
+
+/* Logo / site title */
+header h1 {
+  margin: 0 0 1rem 0;
+  /* space below title */
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+/* Navigation list */
+/* Navigation bar */
+header nav {
+  padding: 0.75rem 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Navigation list centered */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+header nav li:not(:last-child) a::after {
+  content: "|";
+  margin-left: 2rem;
+  color: white;
+}
+
+header nav a:hover {
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  border-radius: 4px;
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--text-color);
+  /* deep purple */
+  color: var(--body-bg);
+  /* white text */
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Layout for progress page */
+.progress-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Progress tracker box */
+.progress-box {
+  flex: 1;
+  background-color: var(--primary-bg);
+  /* lavender card */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress-box h3 {
+  margin-top: 0;
+  color: var(--text-color);
+}
+
+/* Form rows */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-row label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.form-row input {
+  padding: 0.5rem;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+}
+
+/* Calculate button */
+.btn-calc {
+  background-color: var(--text-color);
+  color: var(--body-bg);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-calc:hover {
+  background-color: #3a1d66;
+  /* darker purple hover */
+}
+
+/* Progress bar */
+.progress-bar-wrapper {
+  margin-top: 1.5rem;
+  background-color: #fff;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  height: 20px;
+  width: 100%;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  /* updated dynamically with JS */
+  background-color: var(--text-color);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+/* Image placeholder */
+.progress-image {
+  flex: 1;
+  text-align: center;
+}
+
+.progress-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Quote section */
+.quote-section {
+  margin: 2rem 0;
+  text-align: center;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+.quote-section span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* Push intro text down so it doesn't merge with nav */
+.page-intro {
+  margin-top: 140px;
+  /* creates space below fixed header */
+  margin-bottom: 2rem;
+  /* spacing before tracker */
+}
+
+/* Add margin around progress tracker section */
+.progress-layout {
+  margin: 2rem 0;
+  /* vertical spacing above and below */
+  gap: 2rem;
+  /* spacing between tracker and image */
+}
+
+main {
+  margin-left: 2rem;
+  /* space from left edge */
+  margin-right: 2rem;
+  /* optional: space from right edge too */
+}
+
+

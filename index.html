@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Readify | Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Readify.css" >
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="pages.css">
+  <!-- Favicon & PWA -->
+  <link rel="icon" href="images/favicon.png" >
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    
+    <!-- Navigation -->
+   <nav>
+      <h1>Readify</h1> <div class="hamburger" id="hamburger">
+         <span></span>
+         <span></span>
+          <span></span>
+       </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Book Explorer</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="recommend.html">Recommend</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- QUOTE / PHRASE OF THE DAY SECTION -->
+    <section>
+      <button aria-label="Previous quote">&lt;</button>
+
+      <div>
+        <h2>Quote of the Day</h2>
+        <p id="quote-text"></p>
+        <p><strong id="quote-author"></strong></p>
+      </div>
+
+      <button aria-label="Next quote">&gt;</button>
+    </section>
+
+    <!-- AUTHOR OF THE DAY SECTION -->
+    <section>
+      <article>
+        <img id="author-image" src="images/donnatarrt.jpg" alt="Author image">
+
+
+        <div>
+          <h3>Author of the Day</h3>
+          <p><strong id="author-name">Author Name</strong></p>
+          <p id="author-work">Famous work</p>
+
+        </div>
+      </article>
+    <section>
+    <br>
+    <br>
+    <br>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <!-- Footer Navigation -->
+    <section>
+      <h4>Readify</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress</a></li>
+        <li><a href="recommend.html">Recommend</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section>
+      <h4>Subscribe to our newsletter</h4>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required >
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+
+</html>

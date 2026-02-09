@@ -1,0 +1,55 @@
+.progress-page .progress-bar {
+  height: 18px;
+}
+
+.feedback-page textarea {
+  min-height: 120px;
+}
+
+/* Book grid container */
+section>div:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 100px;
+  /* space above footer */
+}
+
+/* Book card */
+article {
+  background-color: var(--primary-bg);
+  /* lavender border */
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Book cover image */
+article img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  /* keeps an A4-like proportion */
+  object-fit: cover;
+  /* ensures image fills nicely */
+  border-radius: 4px;
+  background-color: #fff;
+  /* white background behind cover */
+}
+
+/* Title & author below the cover */
+article h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  /* deep purple */
+}
+
+article p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+
+

@@ -1,0 +1,139 @@
+/* Book Explorer Page */
+
+/* Header specific to explorer */
+/* Header */
+/* Header container */
+header {
+  background-color: white;
+  /* lavender */
+  color: white;
+  /* deep purple */
+  padding: 2rem 3rem;
+  /* taller purple bar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+  /* center content */
+}
+
+/* Logo / site title */
+header h1 {
+  margin: 0 0 1rem 0;
+  /* space below title */
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+/* Navigation bar */
+header nav {
+  padding: 0.75rem 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Navigation list centered */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+header nav li:not(:last-child) a::after {
+  content: "|";
+  margin-left: 2rem;
+  color: var(--text-color);
+}
+
+header nav a:hover {
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  border-radius: 4px;
+}
+
+
+/* Search & filter row */
+section>div:first-of-type {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 100px 0 20px;
+  /* push down below fixed header */
+}
+
+input[type="text"],
+select {
+  padding: 0.5rem;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+}
+
+/* Book grid */
+section>div:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+article {
+  background-color: var(--primary-bg);
+  /* lavender card background */
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+article h3 {
+  margin: 0.5rem 0;
+  color: var(--text-color);
+}
+
+article p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--text-color);
+  /* deep purple */
+  color: var(--body-bg);
+  /* white text */
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  align-items: flex-start;
+  /* Ensure NO position: fixed or absolute here */
+  position: relative;
+  width: 100%;
+}
+
+

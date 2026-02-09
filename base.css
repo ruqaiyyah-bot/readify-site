@@ -1,0 +1,111 @@
+:root {
+    --primary-bg: #CCCCFF;
+    /* header & footer background */
+    --body-bg: #FFFFFF;
+    /* body background */
+    --text-color: #512888;
+    /* body text */
+    --header-footer-text: #FFFFFF;
+    /* nav links, headings in header/footer */
+}
+
+
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    /* bold headings */
+}
+
+
+/* --- HAMBURGER CORE STYLES --- */
+
+@media (max-width: 768px) {
+    nav {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        height: auto !important;
+        padding: 10px 20px !important;
+    }
+}
+.hamburger {
+    display: none; /* Hidden on Desktop */
+    cursor: pointer;
+    z-index: 1001; /* Keeps it above everything */
+    padding: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #4a148c; /* Dark Purple */
+    border-radius: 2px;
+}
+
+/* --- MOBILE VIEW --- */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Shows on Phones */
+    }
+
+    /* Target the list of links */
+    nav ul, .nav-links {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: #f3e5f5; /* Light purple background */
+        padding: 20px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    /* This is what the JavaScript toggles */
+    nav ul.active, .nav-links.active {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* FORCE hide the menu on all pages by default */
+    nav ul, 
+    .nav-links, 
+    .navbar ul {
+        display: none !important; 
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #f3e5f5;
+        padding: 20px 0;
+        z-index: 999;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    /* FORCE show the menu only when active is added */
+    nav ul.active, 
+    .nav-links.active, 
+    .navbar ul.active {
+        display: flex !important;
+    }
+}

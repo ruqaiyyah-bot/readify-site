@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Progress | Readify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="progress.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="page.css">
+  <link rel="icon" href="images/favicon.png" >
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Readify</h1>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+         <span></span>
+         <span></span>
+       </div>
+       
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Book Explorer</a></li>
+        <li><a href="progress.html" class="active">Progress</a></li>
+        <li><a href="recommend.html">Recommend</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE INTRO TEXT -->
+    <section class="page-intro">
+      <h2>Wondering how long it’ll take to reach the last page?</h2>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <section class="progress-layout">
+
+      <!-- LEFT: PROGRESS TRACKER BOX -->
+      <div class="progress-box">
+        <h3>Progress Tracker</h3>
+
+        <form id="progressForm">
+
+          <div class="form-row">
+            <label for="totalPages">Total number of pages:</label>
+            <input type="number" id="totalPages" required>
+          </div>
+
+          <div class="form-row">
+            <label for="pagesRead">Number of pages read:</label>
+            <input type="number" id="pagesRead" required>
+          </div>
+
+          <div class="form-row">
+            <label for="readingSpeed">Reading speed:</label>
+            <input type="number" id="readingSpeed" required>
+          </div>
+
+          <button type="submit" class="btn-calc">Calculate</button>
+
+        </form>
+
+        <!-- PROGRESS BAR -->
+        <div class="progress-bar-wrapper">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div id="tracker-results"></div>
+
+      </div>
+
+      <!-- RIGHT: IMAGE PLACEHOLDER -->
+      <div class="progress-image">
+        <img src="images/Progress.png" alt="Book illustration">
+      </div>
+
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="quote-section">
+      <blockquote>
+        “Begin at the beginning… and go on till you come to the end: then stop.”
+        <span>— Lewis Carroll, <em>Adventures in Wonderland</em></span>
+      </blockquote>
+    </section>
+    <br>
+    <br>
+    <br>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <center>
+      <h3>Readify</h3>
+      <p>&copy; 2025 Readify. All rights reserved.</p>
+    </center>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
